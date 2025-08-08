@@ -1,18 +1,20 @@
 import { Link, useLocation } from "react-router-dom";
-import { FaHome, FaTasks, FaMoneyCheck, FaQuestionCircle, FaUserCircle } from "react-icons/fa";
+import { FaHome, FaUsers, FaMoneyBillWave, FaClipboardList, FaClipboardCheck, FaUserCircle, FaRegFileAlt } from "react-icons/fa";
 import { AiOutlineProject } from "react-icons/ai";
+import { MdOutlineReviews } from "react-icons/md";
+import { BiTransferAlt } from "react-icons/bi";
 
 export default function Sidebar() {
   const location = useLocation();
 
   const menuItems = [
     { name: "Dashboard", path: "/dashboard", icon: <FaHome /> },
-    { name: "Projects", path: "/my-projects", icon: <AiOutlineProject /> },
-    { name: "Transfer Projects", path: "/completed-projects", icon: <FaTasks /> },
-    { name: "Report", path: "/completed-projects", icon: <FaTasks /> },
-    { name: "Team Member", path: "/completed-projects", icon: <FaTasks /> },
-    { name: "Pay out", path: "/payout", icon: <FaMoneyCheck /> },
-    { name: "Review", path: "/help", icon: <FaQuestionCircle /> },
+    { name: "Projects", path: "/my-projects", icon: <FaClipboardList /> },
+    { name: "Transfer Projects", path: "/transfer-projects", icon: <BiTransferAlt /> },
+    { name: "Report", path: "/report", icon: <FaRegFileAlt /> },
+    { name: "Team Member", path: "/team-member", icon: <FaUsers /> },
+    { name: "Pay out", path: "/payout", icon: <FaMoneyBillWave /> },
+    { name: "Review", path: "/review", icon: <MdOutlineReviews /> },
   ];
 
   return (
@@ -30,7 +32,7 @@ export default function Sidebar() {
       <div className="flex flex-col items-center text-white py-6">
         <FaUserCircle className="text-4xl mb-2" />
         <p className="text-md font-semibold">Name</p>
-        <p className="text-sm opacity-80">Employee</p>
+        <p className="text-sm opacity-80">TL / Management</p>
       </div>
 
       {/* Navigation */}
