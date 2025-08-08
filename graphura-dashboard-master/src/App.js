@@ -5,6 +5,7 @@ import Help from "./pages/Help";
 import PayOut from "./pages/PayOut";
 import CompletedProjects from "./pages/CompletedProjects";
 import Report from "./pages/Report";
+import Review from "./pages/Review";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Route path="/completed-projects" element={<CompletedProjects />} />
         <Route path="/report" element={<Report/>} />
         <Route path="/payout" element={<PayOut/>} />
-        <Route path="/Review" element={<Help />} />
+        <Route path="/Review" element={<Review />} />
         {/* Add more routes here later */}
       </Routes>
     </Router>
