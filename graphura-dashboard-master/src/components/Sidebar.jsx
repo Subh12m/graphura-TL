@@ -7,10 +7,12 @@ export default function Sidebar() {
 
   const menuItems = [
     { name: "Dashboard", path: "/dashboard", icon: <FaHome /> },
-    { name: "My Projects", path: "/my-projects", icon: <AiOutlineProject /> },
-    { name: "Completed Projects", path: "/completed-projects", icon: <FaTasks /> },
+    { name: "Projects", path: "/my-projects", icon: <AiOutlineProject /> },
+    { name: "Transfer Projects", path: "/completed-projects", icon: <FaTasks /> },
+    { name: "Report", path: "/completed-projects", icon: <FaTasks /> },
+    { name: "Team Member", path: "/completed-projects", icon: <FaTasks /> },
     { name: "Pay out", path: "/payout", icon: <FaMoneyCheck /> },
-    { name: "Help", path: "/help", icon: <FaQuestionCircle /> },
+    { name: "Review", path: "/help", icon: <FaQuestionCircle /> },
   ];
 
   return (
