@@ -1,6 +1,7 @@
 import Sidebar from "../components/Sidebar";
 import ProjectTable from "../components/ProjectTable";
 import Topbar from "../components/Topbar"; // <-- Import the Topbar component
+import CompanyForm from "../components/CompanyForm";
 
 export default function MyProjects() {
   return (
@@ -8,7 +9,10 @@ export default function MyProjects() {
       <Sidebar />
       <div className="flex-1 p-8 bg-gray-100">
         <Topbar /> {/* <-- Add Topbar here */}
-        <ProjectTable title="Pending Projects" />
+        <h1 className="text-3xl mb-6">My Projects</h1>
+        
+        <CompanyForm/>
+
       </div>
     </div>
   );
