@@ -23,10 +23,10 @@ export default function TeamMember() {
               Team Members
             </h1>
           </div>
+
           <Membertable />
           {/* Add any additional content or components here */}
-
-          <div className="p-6 max-w-4xl mx-auto bg-white rounded-md shadow-md">
+          <div className="p-6 mt-6 max-w-4xl mx-auto bg-white rounded-md shadow-md">
             <form className="grid gap-6">
               {/* Name */}
               <div className="grid grid-cols-2 items-center gap-4">

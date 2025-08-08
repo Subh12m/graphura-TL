@@ -19,7 +19,7 @@ export default function Membertable({ title }) {
   }));
 
   return (
-    <div className="bg-white rounded-xl shadow-lg mt-6 p-6">
+    <div className="mt-2 p-6">
       {/* Outer card */}
       <h2 className="text-xl font-semibold mb-4">{title}</h2>
       <div className="bg-white rounded-xl shadow-md overflow-x-auto p-4">
