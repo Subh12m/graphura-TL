@@ -8,6 +8,16 @@ export default function Membertable({ title }) {
     activity: "Bold text column",
   }));
 
+  // Add status and other fields to rows
+  const rowsWithStatus = Array.from({ length: 6 }, (_, i) => ({
+    name: `Member ${i + 1}`,
+    location: `Location ${i + 1}`,
+    email: `member${i + 1}@example.com`,
+    contact: `123-456-789${i}`,
+    joining: `2024-06-0${i + 1}`,
+    status: i % 2 === 0 ? "Active" : "Inactive",
+  }));
+
   return (
     <div className="bg-white rounded-xl shadow-lg mt-6 p-6">
       {/* Outer card */}
@@ -26,17 +36,22 @@ export default function Membertable({ title }) {
             </tr>
           </thead>
           <tbody>
-            {rows.map((row, idx) => (
+            {rowsWithStatus.map((row, idx) => (
               <tr key={idx} className="border-t text-gray-700 font-medium">
                 <td className="px-4 py-3">{row.name}</td>
                 <td className="px-4 py-3">{row.location}</td>
                 <td className="px-4 py-3">{row.email}</td>
                 <td className="px-4 py-3">{row.contact}</td>
+                <td className="px-4 py-3">{row.joining}</td>
                 <td className="px-4 py-3">
                   <button
-                    className="bg-blue-500 text-white px-4 py-1 rounded text-sm font-semibold hover:bg-blue-600 transition"
+                    className={`px-4 py-1 rounded text-sm font-semibold transition ${
+                      row.status === "Active"
+                        ? "bg-green-500 text-white hover:bg-green-600"
+                        : "bg-red-500 text-white hover:bg-red-600"
+                    }`}
                   >
-                    Status
+                    {row.status}
                   </button>
                 </td>
               </tr>
