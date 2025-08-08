@@ -1,5 +1,4 @@
 import Sidebar from "../components/Sidebar";
-import ProjectTable from "../components/ProjectTable";
 import Topbar from "../components/Topbar";
 import CompanyForm from "../components/CompanyForm";
 
