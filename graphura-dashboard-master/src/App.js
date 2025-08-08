@@ -6,6 +6,7 @@ import PayOut from "./pages/PayOut";
 import CompletedProjects from "./pages/CompletedProjects";
 import Report from "./pages/Report";
 import Review from "./pages/Review";
+import TransferProjects from "./pages/Transferprojects";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/my-projects" element={<MyProjects />} />
-        <Route path="/completed-projects" element={<CompletedProjects />} />
+        <Route path="/transfer-projects" element={<TransferProjects />} />
         <Route path="/report" element={<Report/>} />
         <Route path="/payout" element={<PayOut/>} />
         <Route path="/Review" element={<Review />} />
